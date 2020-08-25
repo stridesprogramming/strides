@@ -1,0 +1,9 @@
+Personalized and SEO optimized image names.
+
+
+Changes:
+Added Instagram Logo to site icons
+Made scheduling button appear on the mobile site
+Hovered items are underlined
+
+

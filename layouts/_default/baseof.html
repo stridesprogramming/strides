@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ block "title" . }}
+      {{ .Site.Title }}
+    {{ end }}</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/tachyons.css">
+  </head>
+  {{ partial "navbar.html" . }}
+  <h1>HEY MARK</h1>
+  <body class="tc mt5">
+    {{ block "main" . }}
+    {{ end }}
+  </body>
+</html>

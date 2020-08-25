@@ -1,0 +1,11 @@
+<div class="h5">
+    {{ range .Site.Menus.main }}
+        <div id="{{ lower .Title}}">
+            <a class="link dim ba ph3 pv2 mb2 dib dark-green" href="">{{.Title}}</a>
+        </div>
+        <script>
+          var navElement = document.getElementById("{{ lower .Title }}");
+          // document.onscroll = navElement.remove();
+        </script>
+    {{ end }}
+</div>
