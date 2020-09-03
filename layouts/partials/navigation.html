@@ -1,11 +1,11 @@
-<div class="h5">
+<div class="h4 navigation flex justify-center items-center">
     {{ range .Site.Menus.main }}
-        <div id="{{ lower .Title}}">
-            <a class="link dim ba ph3 pv2 mb2 dib dark-green" href="">{{.Title}}</a>
-        </div>
+      <div class="ma2">
+        <a id="{{ lower .Title}}" class="ma2 dib dark-green ma2" href="">{{.Title}}</a>
         <script>
           var navElement = document.getElementById("{{ lower .Title }}");
           // document.onscroll = navElement.remove();
         </script>
+      </div>
     {{ end }}
 </div>

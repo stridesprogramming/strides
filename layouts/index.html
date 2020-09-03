@@ -1,6 +1,16 @@
 {{ define "main" }}
-    <div class="flex justify-center">   
-        {{ readFile "/static/svg/welcome.svg" | safeHTML }}
+    <div class="mw7 center">
+        <div class="flex justify-center">  
+            {{ readFile "/static/svg/welcome.svg" | safeHTML }}
+        </div>
+        {{ partial "navigation.html" . }}
+        <div class="tl ma2">
+            {{ .Content }}
+        </div>
+        {{ partial "welcome-checklist.html" . }}
+        {{ partial "contact.html" . }}
     </div>
-    {{ partial "navigation.html" . }}
+    <script>
+        console.log("We find out what's happening, and propose solutions.")
+    </script>
 {{ end }}

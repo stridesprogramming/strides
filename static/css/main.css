@@ -1,3 +1,7 @@
+:root {
+  --bg-color: azure;
+}
+
 .welcome {
   max-height: 80vh;
   max-width: 80vw;
@@ -7,4 +11,23 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   overflow-x: hidden;
+  max-width: 100vw;
+  font-size: 20px;
+  background-color: var(--bg-color);
+}
+
+.navigation div::after {
+  content: "";
+  width: inherit;
+  height: 4rem;
+  position: relative;
+  right: -1rem;
+  bottom: 4rem;
+  display: block;
+  background-image: url(/svg/welcome-lines.svg);
+  z-index: -100;
+}
+
+.navigation a {
+  background-color: var(--bg-color);
 }

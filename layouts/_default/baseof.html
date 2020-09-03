@@ -9,9 +9,10 @@
     <link rel="stylesheet" type="text/css" href="css/tachyons.css">
   </head>
   {{ partial "navbar.html" . }}
-  <h1>HEY MARK</h1>
   <body class="tc mt5">
     {{ block "main" . }}
     {{ end }}
+    {{ partial "footer.html" . }}
   </body>
+
 </html>
