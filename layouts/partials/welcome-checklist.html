@@ -1,0 +1,14 @@
+<form class="tl ma3 ma5-ns">
+    <input type="checkbox" id="checkins" name="input">
+    <label for="checkins">Check Ins</label><br>
+    <input type="checkbox" id="followups" name="input" value="followups">
+    <label for="followups">Follow Ups</label><br>
+    <input type="checkbox" id="relationships" name="input" value="relationships">
+    <label for="relationships">Long Term Relationships</label><br><br>
+  </form>
+  <script>
+    const inputs = document.getElementsByName("input");
+    inputs.forEach(element => {
+       element.click();
+    });
+  </script>
